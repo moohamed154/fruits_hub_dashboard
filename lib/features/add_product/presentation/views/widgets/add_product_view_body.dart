@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:fruits_hub_dashboard/core/widgets/custom_check_box.dart';
 import 'package:fruits_hub_dashboard/core/widgets/custom_text_field.dart';
+import 'package:fruits_hub_dashboard/core/widgets/is_featured_check_box.dart';
 import 'package:fruits_hub_dashboard/features/add_product/presentation/views/widgets/image_field.dart';
 
 class AddProductViewBody extends StatefulWidget {
@@ -46,7 +48,9 @@ class _AddProductViewBodyState extends State<AddProductViewBody> {
                 maxLines: 5,
               ),
               const SizedBox(height: 16),
-              ImageField(),
+              IsFeaturedCheckBox(onChanged: (value) {}),
+              const SizedBox(height: 16),
+              ImageField(onFileChanged: (image) {}),
             ],
           ),
         ),
