@@ -9,7 +9,7 @@ import 'package:fruits_hub_dashboard/core/utils/backend_endpoints.dart';
 class ImagesRepoImpl extends ImagesRepo {
   final StorageService storageService;
 
-  ImagesRepoImpl({required this.storageService});
+  ImagesRepoImpl(this.storageService);
   @override
   Future<Either<Failure, String>> uploadImage(File image) async {
     try {
